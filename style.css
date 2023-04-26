@@ -1,57 +1,58 @@
-:root{--navbar_blue: #4763d1;
---heading: rgb(46,63,247);
---main: rgb(173,176,237);
---left: rgb(75,159,250);
---right: rgb(75,159,250);
---foot: rgb(17,17,219);
+:root{--light-green: rgb(171, 196, 170);
+--heading: rgb(191,203,168);
+--main: rgb(91,138,114);
+--sidebar: rgb(103, 93, 80);
+--foot: rgb(86,119,108);
 --light: white;
---dark: rgb(39,40,51);
+--dark: rgb(70,79,65);
 --fontcolor: darkslategrey;
 }
 
-.navbar{
-  background-color: var(--main);
+body{
+  background-image: radial-gradient(circle,var(--dark), var(--main), var(--sidebar));
+}
+.heading {
   margin: 0;
-  padding: 5px;
-}
-button{
-  background-color: var(--main);
-  color: darkslategrey;
-}
-
-.heading{
-  background-color: var(--heading);
+  
   padding: 5px;
   
   text-align: center;
 }
+
 img{
   border-radius: 50%;
   padding-bottom: 20px;
-  height: 400;
+  height: 200;
   width: auto;
 }
 .container{
+  
   display: flex;
+  margin: 0;
+  padding: 3px;
+
 }
 .left-sidebar{
-  background-color: var(--left);
+  
+  
   width: 25%;
   padding: 5px;
   align-content: center;
 }
 .main{
-  background-color: var(--light);
+  
+  
   padding: 5px;
   width: 50%;
 }
 .right-sidebar{
-  background-color: var(--right);
+  
+  
   width: 25%;
   padding: 5px;
 }
 .footer{
-  background-color: var(--foot);
+  
   margin: 0;
   padding: 5px;
   text-align: center;
